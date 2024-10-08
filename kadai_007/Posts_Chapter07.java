@@ -26,6 +26,11 @@ public class Posts_Chapter07 {
 			Statement writing = con.createStatement();
 			System.out.println("レコード追加を実行します");
 			
+			//古いデータを削除
+			String sqlDelete = "DELETE FROM posts";
+			writing.executeUpdate(sqlDelete);
+			
+			//新しいデータの挿入
 			String sqlInsert = "INSERT INTO posts (user_id, posted_at, post_content, likes) VALUES "
                     + "(1003, '2023-02-08', '昨日の夜は徹夜でした・・', 13),"
                     + "(1002, '2023-02-08', 'お疲れ様です！', 12),"
