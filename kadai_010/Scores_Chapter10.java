@@ -1,4 +1,4 @@
-package kadai_10;
+package kadai_010;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
